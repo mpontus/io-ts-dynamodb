@@ -17,7 +17,7 @@ import * as D from 'io-ts-dynamodb'
 const User = D.record({
   id: D.string,
   name: D.string,
-  age: D.number,
+  age: D.number
 })
 
 const user = { id: '123', name: 'John', age: 30 }
@@ -34,7 +34,7 @@ const decoded = User.decode(encoded)
 ## Types
 
 - `D.string` - String values
-- `D.number` - Numeric values
+- `D.number` - Numeric values  
 - `D.bool` - Boolean values
 - `D.stringSet` - String sets
 - `D.numberSet` - Number sets
@@ -42,7 +42,3 @@ const decoded = User.decode(encoded)
 - `D.record(props)` - Record structures
 - `D.map(codec)` - Nested objects
 - `D.list(codec)` - Arrays
-
-## Documentation
-
-[API Reference](https://mpontus.github.io/io-ts-dynamodb/)
