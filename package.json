@@ -21,7 +21,6 @@
     "ts-jest": "^26.5.3",
     "fast-check": "^2.13.0",
     "docs-ts": "^0.6.10",
-    "cspell": "^5.5.2",
     "markdown-magic": "^2.0.0"
   },
   "scripts": {
@@ -33,7 +32,6 @@
     "test": "yarn run jest",
     "test:watch": "yarn run jest --watch",
     "docs": "yarn run docs-ts",
-    "spell": "yarn cspell '**/*.*'",
     "md": "yarn run markdown"
   }
 }
