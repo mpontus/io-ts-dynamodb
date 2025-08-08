@@ -238,7 +238,7 @@ export const list = <A, O extends AttributeValue, I>(
  *   // { id: { S: '123' }, name: { S: 'John' }, age: { N: '30' }, active: { BOOL: true } }
  */
 export const record = <
-  P extends Record<string, t.Type<unknown, AttributeValue, unknown>>
+  P extends Record<string, t.Type<any, AttributeValue, unknown>>
 >(
   properties: P
 ): t.Type<
